@@ -1,6 +1,8 @@
-body, html {
+body {
     height: 100%;
     margin: 0;
+    background-color: #3F3F3F;
+    color: #5B605E;
 }
 
 header {
@@ -13,10 +15,24 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 main > pre {
     text-align: center;
+    color: #DCDCCC;
+}
+
+span.border {
+    color: #C0C0C0;
+}
+
+span.plate {
+    color: #FFCFAF;
+}
+
+span.exclaim {
+    color: #1C1C1C;
 }
 
 footer {
