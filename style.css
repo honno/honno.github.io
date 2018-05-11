@@ -1,8 +1,12 @@
 body {
     height: 100%;
     margin: 0;
-    background-color: #3F3F3F;
-    color: #5B605E;
+    background: #1f1f1f;
+    color: #dcdccc;
+}
+
+::selection {
+    background: #2f2f2f;
 }
 
 header {
@@ -19,20 +23,22 @@ main {
 }
 
 main > pre {
+    font-size: 9px;
+    font-family: "Lucida Console", monospace;
+    line-height: 9px;
     text-align: center;
-    color: #DCDCCC;
 }
 
 span.border {
-    color: #C0C0C0;
+    color: #8f8f8f;
 }
 
 span.plate {
-    color: #FFCFAF;
+    color: #c3bf9f;
 }
 
 span.exclaim {
-    color: #1C1C1C;
+    color: 	#4e4e4e;
 }
 
 footer {
