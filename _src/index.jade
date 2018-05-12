@@ -15,4 +15,21 @@ body
       = ' '
       span(id='name') not implemented
       = ' '
-      span= 'Please come by later ;\)'
+      span(id='msg')= 'Please come by later ;\)'
+
+  footer
+    div(id='left')
+
+    div(id='right')
+      ul
+        li
+          = 'ASCII art found on '
+          a(href='http://neb.ija.lv/ascii-art/warning.html') neb.ija.lv
+          = ' and a gazillion other places'
+        li
+          = 'Favicon modified from '
+          a(href='http://game-icons.net/lorc/originals/hazard-sign.html') icon
+          = ' made by '
+          a(href='http://lorcblog.blogspot.co.uk/') Lorc
+          = ' under '
+          a(href='./cc-by-30.txt') CC-BY 3.0
