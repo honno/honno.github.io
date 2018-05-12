@@ -7,6 +7,9 @@
 @noticable_black: #4e4e4e;
 @ptsd_red: #ac0000;
 @sage_purple: #af5fff;
+@neo_blue: #005f87;
+@octo_green: #005f00;
+@stodgy_brown: #800000;
 
 /* Fonts */
 @haxor: "Lucida Console", monospace;
@@ -79,31 +82,51 @@ footer {
 	  background: @is_it_black;
 }
 
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
 li {
     display: inline-block;
+
+    &:before {
+        content: '\00a0\2022\00a0';
+    }
+
+    &:first-child:before {
+        content: '';
+    }
 }
 
-li:before {
-    content: '\00a0\2022\00a0';
+a {
+    &:link {
+        color: @terminal_white;
+        text-decoration: none;
+    }
+    &:visited {
+        color: @terminal_white;
+        text-decoration: none;
+    }
+    &:hover {
+        color: @terminal_white;
+        text-decoration: underline;
+    }
+    &:active {
+        color: @terminal_white;
+        text-decoration: underline;
+    }
+
 }
 
-li:first-child:before {
-    content: '';
+#twitter {
+    background: @neo_blue;
 }
 
-a:link {
-    color: @terminal_white;
-    text-decoration: none;
+#github {
+    background: @octo_green;
 }
-a:visited {
-    color: @terminal_white;
-    text-decoration: none;
-}
-a:hover {
-    color: @terminal_white;
-    text-decoration: underline;
-}
-a:active {
-    color: @terminal_white;
-    text-decoration: none;
+
+#email {
+    background: @stodgy_brown;
 }
