@@ -2,6 +2,14 @@ html
 head
   link(rel='stylesheet', href='style.css')
 body
+  include ribbon.html
+
   main
     pre
       include sign.html
+    p(id='message')
+      span(id='err') ERR!
+      = ' '
+      span(id='name') not implemented
+      = ' '
+      span= 'Please come by later ;\)'

@@ -1,0 +1,59 @@
+/* Colours */
+@greyest_grey: #1f1f1f;
+@is_it_black: #2f2f2f;
+@terminal_white: #dcdccc;
+@kinda_steel: #8f8f8f;
+@hipster_yellow: #c3bf9f;
+@noticable_black: #4e4e4e;
+@ptsd_red: #ac0000;
+@sage_purple: #af5fff;
+
+/* Fonts */
+@haxor: "Lucida Console", monospace;
+
+body {
+	  height: 100%;
+	  margin: 0;
+	  background: @greyest_grey;
+	  color: @terminal_white;
+	  font-size: 9px;
+	  font-family: @haxor;
+}
+
+&::selection {
+	  background: @is_it_black;
+}
+
+main {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+
+	  >pre {
+		    font-size: 9px;
+		    font-family: @haxor;
+		    line-height: 9px;
+		    text-align: center;
+
+	      >.border {
+	          color: @kinda_steel;
+        }
+        >.plate {
+	          color: @hipster_yellow;
+        }
+        >.exclaim {
+	          color: @noticable_black;
+        }
+    }
+}
+
+p#message {
+    >#err {
+        color: @ptsd_red;
+    }
+    >#name {
+        color: @sage_purple;
+    }
+}
