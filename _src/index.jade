@@ -7,13 +7,17 @@ head
 body
   include ribbon.html
 
+  header
+    h1 Matthew Barber
+    = ' // honno.github.io'
+
   main
     pre
       include sign.html
     p(id='message')
       span(id='err') ERR!
       = ' '
-      span(id='name') notImplemented
+      span(id='name') Website Not Implemented
       = ' '
       span(id='msg')= 'Please come by later :\)'
 
@@ -30,9 +34,8 @@ body
     div(id='right')
       ul
         li
-          = 'ASCII art found on '
+          = 'ASCII art modified from '
           a(href='http://neb.ija.lv/ascii-art/warning.html') neb.ija.lv
-          = ' and a gazillion other places, huh'
         li
           = 'Favicon modified from '
           a(href='http://game-icons.net/lorc/originals/hazard-sign.html') icon
@@ -41,9 +44,8 @@ body
           = ' under '
           a(href='./cc-by-30.txt') CC-BY 3.0
         li
-          = 'The slick '
-          a(href='http://tholman.com/github-corners/') banner
-          = ' was made by '
+          a(href='http://tholman.com/github-corners/') Banner
+          = ' made by '
           a(href='http://tholman.com/') tholman
           = ' under '
           a(href='./mit.txt') MIT
