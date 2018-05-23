@@ -1,30 +1,6 @@
 ---
 layout: landing
-title: Greetings
+title: Matthew's Landing
 ---
 
-```
-   __________________________________________________________________________   
- //                             __ ____ __                                   \\ 
- |   ________________________    \  /\  /     <<***>><<***>><<***>><<***>>    | 
- |  /                        \    \/MM\/          Official Association        | 
- |  |       .adAMMMAbn.      |    /\WW/\            HUNTER'S LICENSE          | 
- |  |      dMMMMMMMMMMA.     |  _/ _\/_ \_    <<***>><<***>><<***>><<***>>    | 
- |  |     'HMMMMMMMMMMMl.    |                                                | 
- |  |    db\MMM^"     "^j    |  NAME(-S): Matthew Roy    AGE:             20  | 
- |  |    MMY            :    |  SURNAME:       Barber    GENDER:        Male  | 
- |  |    ,M|`,----. ,---.    |  NICKNAME:       Honno    OCCUPATION: Student  | 
- |  |    :,' \    ;^:   ;    |                                                | 
- |  |     q:  `--'  )`--     |  ETHNICITY:                     Asian British  | 
- |  |     ,;            ;    |  RESIDENCE:               Southend-on-Sea, UK  | 
- |  |    /: \    `---  :     |  DESCRIPTION:      Opinionated about TV shows  | 
- |  |   /  \ "-._   _.'      |                                                | 
- |  |  (    \    ```;        |  WWW:                         honno.github.io  | 
- |  |.' '.   `.     :-.      |  EMAIL:             quitesimplymatt@gmail.com  | 
- |  |     '.   `. .'/  "-.   |  TWITTER:                      @WhoStoleHonno  | 
- |  |       "-.__"_/      "-.|  GITHUB:                               @Honno  | 
- |  \________________________/                                                | 
- |                              LICENSE+ID<<46696E642061206E657720686F626279  | 
- \\__________________________________________________________________________// 
-                                                                                
-```
+{% include card.html %}
