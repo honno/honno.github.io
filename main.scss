@@ -17,6 +17,10 @@ body {
     font-size: 12px;
 }
 
+* {
+    transition-duration: .1s;
+}
+
 /* Blocks or something */
 
 .main {
@@ -50,4 +54,8 @@ span.text {
         &.github { color: $green }
         &.twitter { color: $cyan }
     }
+}
+
+a#toggle {
+    text-decoration: underline;
 }
