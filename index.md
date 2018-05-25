@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Matthew License
+title: Matthew Barber Says Hello
 ---
 
 {% include card.html %}
