@@ -50,7 +50,7 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2, $base
 span.text {
     a {
         &.www { color: $violet }
-        &.email { color: $red }
+        &.email { color: $yellow }
         &.github { color: $green }
         &.twitter { color: $cyan }
     }
