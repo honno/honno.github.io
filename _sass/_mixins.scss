@@ -1,8 +1,16 @@
-@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights) {
+@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights, $opposite) {
     color: $primary;
-    background-color: $background;
+    background: $background;
 
-    .c-main {
+    ::selection {
+        background: $background-highlights;
+    }
+
+    a {
+        color: $emphasis;
+    }
+
+    .main {
         span {
             &.label { color: $secondary }
             &.text { color: $primary }
@@ -13,8 +21,8 @@
             &.logo { color: $emphasis }
             &.logo-emphasised { color: $emphasis }
 
-            &.banner-text { color: $primary }
-            &.banner-text-highlight { color: $primary }
+            &.banner-text { color: $emphasis }
+            &.banner-text-highlight { color: $emphasis }
 
             &.photo-border { color: $primary }
             &.beauty-spot { color: $emphasis }

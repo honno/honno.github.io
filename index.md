@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Matthew's Landing
+title: Matthew License
 ---
 
 {% include card.html %}

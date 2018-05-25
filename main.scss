@@ -1,19 +1,27 @@
 ---
 ---
 
+/* Imports */
 @import "colours";
 @import "mixins";
 
+/* A variable */
+$font-stack: 'Roboto Mono', monospace;
+
+/* General niceties */
+
 body {
-    height: 100%;
-    padding: 0;
+    padding: 1em;
+
+    font-family: $font-stack;
+    font-size: 12px;
 }
 
-.c-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Blocks or something */
+
+.main {
+    font-family: $font-stack;
+    font-size: 12px;
 
     span {
         &.logo-emphasised { font-weight: bold }
@@ -26,9 +34,20 @@ body {
         &.hair { font-weight: bold }
         &.glasses { color: $blue }
         &.shirt { color: $violet }
-
     }
 }
 
-body, .t--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
-.t--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
+// definitions for light and dark modes of the site
+body, .t--light { @include rebase($base01, $base00, $base1, $base3, $base2, $base03) }
+.t--dark { @include rebase($base1, $base0, $base01, $base03, $base02, $base3) }
+
+/* Inline styles */
+
+span.text {
+    a {
+        &.www { color: $magenta }
+        &.email { color: $red }
+        &.github { color: $green }
+        &.twitter { color: $cyan }
+    }
+}
