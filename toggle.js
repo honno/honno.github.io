@@ -6,11 +6,11 @@ $('#toggle').click(() => {
     if (body.hasClass('--dark')) {
         body.removeClass('--dark');
         body.addClass('--light');
-        text.html("Too bright?");
+        text.html("too bright?");
     }
     else {
         body.removeClass('--light');
         body.addClass('--dark');
-        text.html("Too edgy?");
+        text.html("too edgy?");
     }
 });
