@@ -1,0 +1,24 @@
+@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights) {
+    color: $primary;
+    background-color: $background;
+
+    .c-main {
+        span {
+            &.label { color: $secondary }
+            &.text { color: $primary }
+
+            &.border { color: $emphasis }
+            &.border-highlight { color: $primary }
+
+            &.logo { color: $emphasis }
+            &.logo-emphasised { color: $emphasis }
+
+            &.banner-text { color: $primary }
+            &.banner-text-highlight { color: $primary }
+
+            &.photo-border { color: $primary }
+            &.beauty-spot { color: $emphasis }
+            &.hair { color: $primary }
+        }
+    }
+}
