@@ -33,19 +33,19 @@ body {
         &.skin { color: $orange }
         &.hair { font-weight: bold }
         &.glasses { color: $blue }
-        &.shirt { color: $violet }
+        &.shirt { color: $magenta }
     }
 }
 
 // definitions for light and dark modes of the site
-body, .t--light { @include rebase($base01, $base00, $base1, $base3, $base2, $base03) }
-.t--dark { @include rebase($base1, $base0, $base01, $base03, $base02, $base3) }
+body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2, $base03) }
+.--dark { @include rebase($base1, $base0, $base01, $base03, $base02, $base3) }
 
 /* Inline styles */
 
 span.text {
     a {
-        &.www { color: $magenta }
+        &.www { color: $violet }
         &.email { color: $red }
         &.github { color: $green }
         &.twitter { color: $cyan }
