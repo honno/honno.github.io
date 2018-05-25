@@ -1,0 +1,49 @@
+---
+---
+
+@import "colours";
+
+#c-main {
+    span {
+        &.logo-emphasised { font-weight: bold }
+        &.logo-fill { color: $red; font-weight: bold; }
+
+        &.banner { color: $green }
+        &.banner-stars { color: $yellow }
+
+        &.skin { color: $orange }
+        &.hair { font-weight: bold }
+        &.glasses { color: $blue }
+        &.shirt { color: $violet }
+
+    }
+}
+
+@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights) {
+    color: $primary;
+    background-color: $background;
+
+    #c-main {
+        span {
+            &.label { color: $secondary }
+            &.text { color: $primary }
+
+            &.border { color: $emphasis }
+            &.border-highlight { color: $primary }
+
+            &.logo { color: $emphasis }
+            &.logo-emphasised { color: $emphasis }
+
+            &.banner-text { color: $primary }
+            &.banner-text-highlight { color: $primary }
+
+            &.photo-border { color: $primary }
+            &.beauty-spot { color: $emphasis }
+            &.hair { color: $primary }
+        }
+    }
+}
+
+body, body.t--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
+
+body.t--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
