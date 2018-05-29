@@ -11,8 +11,6 @@ $font-stack: 'Roboto Mono', monospace;
 /* General niceties */
 
 body {
-    padding: 1em;
-
     font-family: $font-stack;
     font-size: 12px;
 }
@@ -23,7 +21,12 @@ body {
 
 /* Blocks or something */
 
-.main {
+body {
+    padding: 1em;
+    margin: 0;
+}
+
+.art {
     font-family: $font-stack;
     font-size: 12px;
 
@@ -38,6 +41,18 @@ body {
         &.hair { font-weight: bold }
         &.glasses { color: $blue }
         &.shirt { color: $magenta }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 1em;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li { list-style-type: none }
     }
 }
 
