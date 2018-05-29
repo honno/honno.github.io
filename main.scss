@@ -26,6 +26,10 @@ body {
     margin: 0;
 }
 
+main {
+    max-width: 800px;
+}
+
 .art {
     font-family: $font-stack;
     font-size: 12px;
@@ -47,6 +51,8 @@ body {
 footer {
     position: absolute;
     bottom: 1em;
+
+    font-size: 11px;
 
     ul {
         margin: 0;

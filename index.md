@@ -1,6 +1,6 @@
 ---
-layout: landing
-title: Matthew Barber Says Hello
+layout: default
+title: Matthew Barber
 ---
 
 {% include card.html %}
