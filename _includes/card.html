@@ -1,3 +1,24 @@
+<!--
+     Yes, I know it looks bad. I spent ages looking for a solution to the
+     "rich text ascii art problem", and there's one clever mac app and
+     thats it.
+
+     I'm not on mac, so I decided to create the ascii art in emacs first, and
+     then colour it with... libre office writer. It comes with a nice
+     selection-fill system using predefined styles, so I could quickly colour
+     what I wanted.
+
+     After that, I exported the coloured version to html and applied some
+     egregious regex substitutions to span-ify each portion with the correct css
+     class. Added the anchors and that was that.
+
+     I could of used a rich text editor - emacs has it's own enriched-mode
+     that implements some format nobody ever uses (it's a pretty good spec).
+     But I think at the moment writer is really the best solution for editing
+     text as actual text and not programming symbols like needed in coloured
+     ascii art.
+-->
+
 <pre class="art">
    <span class="border">__________________________________________________________________________</span>   
  <span class="border">/</span><span class="border">/</span>                             <span class="logo">__</span> <span class="logo">____</span> <span class="logo">__</span>                                   <span class="border">\</span><span class="border">\</span> 
