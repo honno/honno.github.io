@@ -1,14 +1,17 @@
+$shadow-size: 0.05ex;
+@mixin bold($colour) {
+    color: $colour;
+    text-shadow: -$shadow-size 0  $colour, $shadow-size 0  $colour;
+}
+
 @mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights, $opposite) {
     color: $primary;
     background: $background;
 
-    ::selection {
-        background: $background-highlights;
-    }
+    ::selection { background: $background-highlights }
+    ::-moz-selection { background: $background-highlights }
 
-    a {
-        color: $emphasis;
-    }
+    a { color: $emphasis; }
 
     .art {
         span {
@@ -16,7 +19,7 @@
             &.text { color: $primary }
 
             &.border { color: $emphasis }
-            &.border-highlight { color: $primary }
+            &.border-highlight { @include bold($emphasis) }
 
             &.logo { color: $emphasis }
             &.logo-emphasised { color: $emphasis }
@@ -26,7 +29,7 @@
 
             &.photo-border { color: $primary }
             &.beauty-spot { color: $emphasis }
-            &.hair { color: $primary }
+            &.hair { @include bold($primary) }
         }
     }
 

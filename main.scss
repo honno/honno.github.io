@@ -26,26 +26,28 @@ body {
     margin: 0;
 }
 
-main {
-    max-width: 800px;
-}
+main { max-width: 80em }
 
 .art {
+    position: relative;
+
     font-family: $font-stack;
-    font-size: 12px;
+    font-size: 1em;
+    line-height: 1.125em;
 
     span {
-        &.logo-emphasised { font-weight: bold }
-        &.logo-fill { color: $red; font-weight: bold; }
+        display: inline-block;
+
+        &.logo-fill { @include bold($red) }
 
         &.banner { color: $green }
         &.banner-stars { color: $yellow }
 
         &.skin { color: $orange }
-        &.hair { font-weight: bold }
         &.glasses { color: $blue }
         &.shirt { color: $magenta }
     }
+
 }
 
 footer {
