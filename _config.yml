@@ -12,5 +12,6 @@ github_username: honno
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-coffeescript
 sass:
   sass_dir: _sass
