@@ -1,33 +1,33 @@
-$shadow-size: 0.05ex;
+$bold-size: 0.05ex;
 @mixin bold($colour) {
     color: $colour;
-    text-shadow: -$shadow-size 0  $colour, $shadow-size 0  $colour;
+    text-shadow: -$bold-size 0  $colour, $bold-size 0  $colour;
 }
 
-@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlights, $opposite) {
+@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlight) {
     color: $primary;
     background: $background;
 
-    ::selection { background: $background-highlights }
-    ::-moz-selection { background: $background-highlights }
+    ::selection { background: $background-highlight }
+    ::-moz-selection { background: $background-highlight }
 
-    a { color: $emphasis; }
+    a { color: $emphasis }
 
     .art {
         span {
             &.label { color: $secondary }
             &.text { color: $primary }
 
-            &.border { color: $emphasis }
-            &.border-highlight { color: $emphasis }
+            &.border { color: $primary }
+            &.border-highlight { color: $secondary }
 
             &.logo { color: $emphasis }
             &.logo-emphasised { @include bold($emphasis) }
 
-            &.banner-text { color: $primary }
-            &.banner-text-highlight { color: $primary }
+            &.banner-text { color: $secondary }
+            &.banner-text-highlight { color: $secondary }
 
-            &.photo-border { color: $primary }
+            &.photo-border { color: $secondary }
             &.beauty-spot { color: $emphasis }
             &.hair { @include bold($primary) }
         }

@@ -26,7 +26,7 @@ body {
     margin: 0;
 }
 
-main { max-width: 80em }
+main { max-width: 80ex }
 
 .art {
     position: relative;
@@ -65,8 +65,8 @@ footer {
 }
 
 // definitions for light and dark modes of the site
-body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2, $base03) }
-.--dark { @include rebase($base1, $base0, $base01, $base03, $base02, $base3) }
+body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
+.--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
 
 /* Inline styles */
 
