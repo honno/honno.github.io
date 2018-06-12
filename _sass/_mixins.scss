@@ -8,6 +8,8 @@ $bold-size: 0.05ex;
     color: $primary;
     background: $background;
 
+    h1 { color: $emphasis }
+
     ::selection { background: $background-highlight }
     ::-moz-selection { background: $background-highlight }
 
