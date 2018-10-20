@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ascii
 title: Matthew Barber
 ---
 

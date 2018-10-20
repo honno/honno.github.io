@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ site.description }}" />
+
+        <link rel="shortcut icon" href="light.ico"  type="image/x-icon" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet"  href="normalize.css">
+        <link rel="stylesheet" href="ascii.css">
+    </head>
+    <body>
+        <div id="toggle-box">
+            <p><a id="toggle" style="cursor: pointer"></a></p>
+            <script src="toggle.js"></script>
+        </div>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://fonts.google.com/specimen/Roboto">Roboto font</a> by <a href="http://christianrobertson.com/"><i>Christian Robertson</i></a> and other smart people at Google under <a href="https://github.com/google/roboto/blob/master/LICENSE">Apache 2.0</a>
+                </li>
+                <li>
+                    Colour definitions from <a href="http://ethanschoonover.com/solarized">Solarized palette</a> by <a href="http://ethanschoonover.com/"><i>Ethan Schoonover</i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Honno/Honno.github.io">Website source</a> released under <a href="/LICENSE">MIT</a> ^_^
+                </li>
+            </ul>
+
+        </footer>
+    </body>
+</html>
