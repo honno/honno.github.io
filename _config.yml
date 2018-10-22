@@ -4,7 +4,7 @@ email: quitesimplymatt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Matthew Barber.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://honno.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://matthewbarber.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: whostolehonno
 github_username: honno
 
@@ -12,6 +12,5 @@ github_username: honno
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-coffeescript
 sass:
   sass_dir: _sass
