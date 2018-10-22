@@ -1,19 +1,19 @@
 ---
 ---
 
-const text = $('#toggle');
-text.load('moon.txt');
-
 const favicon = $('link[rel="shortcut icon"]');
+const body = $('body');
+const space = $('#toggle');
 
-$('#toggle').on('click', event => {
-    const body = $('body');
+space.load('moon.txt');
+
+$('#toggle').click(() => {
 
     if (body.hasClass('--dark')) {
         body.removeClass('--dark');
         body.addClass('--light');
 
-        text.load('moon.txt');
+        space.load('moon.txt');
 
         return favicon.attr('href', 'light.ico');
 
@@ -21,8 +21,26 @@ $('#toggle').on('click', event => {
         body.removeClass('--light');
         body.addClass('--dark');
 
-        text.load('sun.txt');
+        space.load('sun.txt');
 
         return favicon.attr('href', 'dark.ico');
+    }
+});
+
+$('#toggle').mouseover(() => {
+    console.log("hi");
+    if (body.hasClass('--dark')) {
+        space.load('sun-hover.txt');
+    } else {
+        space.load('moon-hover.txt');
+    }
+});
+
+$('#toggle').mouseleave(() => {
+    console.log("hi");
+    if (body.hasClass('--dark')) {
+        space.load('sun.txt');
+    } else {
+        space.load('moon.txt');
     }
 });
