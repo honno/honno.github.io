@@ -1,11 +1,8 @@
 ---
 ---
 
-const sun = '*';
-const moon = ')';
-
 const text = $('#toggle');
-text.html(moon);
+text.load('moon.txt');
 
 const favicon = $('link[rel="shortcut icon"]');
 
@@ -16,7 +13,7 @@ $('#toggle').on('click', event => {
         body.removeClass('--dark');
         body.addClass('--light');
 
-        text.html(moon);
+        text.load('moon.txt');
 
         return favicon.attr('href', 'light.ico');
 
@@ -24,7 +21,7 @@ $('#toggle').on('click', event => {
         body.removeClass('--light');
         body.addClass('--dark');
 
-        text.html(sun);
+        text.load('sun.txt');
 
         return favicon.attr('href', 'dark.ico');
     }
