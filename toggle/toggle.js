@@ -10,7 +10,6 @@ const space = $('#toggle');
 space.load(folder+'moon.txt');
 
 $('#toggle').click(() => {
-
     if (body.hasClass('--dark')) {
         body.removeClass('--dark');
         body.addClass('--light');
@@ -30,7 +29,6 @@ $('#toggle').click(() => {
 });
 
 $('#toggle').mouseover(() => {
-    console.log("hi");
     if (body.hasClass('--dark')) {
         space.load(folder+'sun-hover.txt');
     } else {
@@ -39,7 +37,6 @@ $('#toggle').mouseover(() => {
 });
 
 $('#toggle').mouseleave(() => {
-    console.log("hi");
     if (body.hasClass('--dark')) {
         space.load(folder+'sun.txt');
     } else {
