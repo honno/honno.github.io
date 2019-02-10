@@ -40,26 +40,40 @@ body {
     }
 }
 
-main { max-width: 80ex }
+main {
+    margin-top: 1em;
+    max-width: 80ex;
+}
 
-.art {
+pre {
     font-size: 12px;
     line-height: 1.125em;
+    margin: 0;
+    span { display: inline-block }
 
-    span {
-        display: inline-block;
+    &.art {
+        span {
+            &.logo-fill { @include bold($red) }
 
-        &.logo-fill { @include bold($red) }
+            &.banner { color: $green }
+            &.banner-stars { color: $yellow }
 
-        &.banner { color: $green }
-        &.banner-stars { color: $yellow }
+            &.skin { color: $orange }
+            &.glasses { color: $blue }
+            &.shirt { color: $magenta }
+        }
 
-        &.skin { color: $orange }
-        &.glasses { color: $blue }
-        &.shirt { color: $magenta }
     }
 
+    &.shell {
+        span {
+            &.user-n-machine { color: $green }
+            &.dir { color: $blue }
+        }
+    }
 }
+
+
 
 footer {
     position: absolute;

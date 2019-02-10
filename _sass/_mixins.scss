@@ -17,24 +17,26 @@ $bold-size: 0.05ex;
 
     #toggle-box { @include bold($primary) }
 
-    .art {
-        span {
-            &.label { color: $secondary }
-            &.text { color: $primary }
+    pre {
+        &.art {
+            span {
+                &.label { color: $secondary }
+                &.text { color: $primary }
 
-            &.border { color: $primary }
-            &.border-highlight { color: $secondary }
+                &.border { color: $primary }
+                &.border-highlight { color: $secondary }
 
-            &.logo { color: $emphasis }
-            &.logo-emphasised { @include bold($emphasis) }
+                &.logo { color: $emphasis }
+                &.logo-emphasised { @include bold($emphasis) }
 
-            &.banner-text { color: $secondary }
-            &.banner-text-highlight { color: $secondary }
+                &.banner-text { color: $secondary }
+                &.banner-text-highlight { color: $secondary }
 
-            &.photo-border { color: $secondary }
-            &.beauty-spot { color: $emphasis }
-            &.hair { @include bold($primary) }
+                &.photo-border { color: $secondary }
+                &.beauty-spot { color: $emphasis }
+                &.hair { @include bold($primary) }
+            }
         }
-    }
 
+    }
 }

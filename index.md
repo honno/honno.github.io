@@ -1,7 +1,8 @@
 ---
 layout: ascii
-title: Matthew Barber
+title: Home
 ---
 
+{% include shell.html dir='' exp='head license.txt' %}
 {% include card.html %}
 
