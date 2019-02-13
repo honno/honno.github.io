@@ -5,18 +5,37 @@
 @import "colours";
 @import "mixins";
 
-/* A variable */
+/* Variables */
 $font-stack: 'Roboto Mono', monospace;
+$font-size: 12px;
+$line-height: 1.125em;
 
 /* General niceties */
 
 body {
     font-family: $font-stack;
-    font-size: 12px;
+    font-size: $font-size;
 }
 
 pre {
     font-family: $font-stack;
+    font-size: $font-size;
+}
+
+a#toggle {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-size: $font-size;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+:before, :after {
+    white-space: pre;
 }
 
 /* Blocks or something */
@@ -41,13 +60,105 @@ body {
 }
 
 main {
-    margin-top: 1em;
+    margin: 1em 0;
     max-width: 80ex;
+
+    h2 {
+        margin: 1em 0;
+        &:before { content: '#\00a0' }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    table, tr, td {
+        padding: 0;
+        margin: 0;
+        height: 1em;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+
+        &:before {
+            content: '+\00a0';
+            float: left;
+        }
+
+        h3 { margin: 0 0 1em }
+
+        & > ul > li {
+            margin: 0 0 1em 1em;
+
+            &:before { content: '>\00a0' }
+
+            p {
+                margin: 0 0 1em 1em;
+            }
+
+            dl {
+                margin: 0 0 1em;
+
+                dt, dd { display: inline-block }
+                dt { font-weight: bold }
+                dd { float: right }
+            }
+
+            ul {
+                margin: 0 0 1em 1em;
+
+                list-style: none;
+                display: inline;
+
+                &:before { content: 'Tools:' }
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    display: inline;
+
+                    &:before { content: none }
+                    /*&:before { content: none }
+                    &:after { content: '\00a0|' }
+                    &:last-child:after { content: none }*/
+                }
+            }
+        }
+
+
+    }
 }
 
+footer {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    width: 100%;
+
+    font-size: 11px;
+    text-align: right;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li { list-style-type: none }
+    }
+}
+
+/* Arty stuff */
+
 pre {
-    font-size: 12px;
-    line-height: 1.125em;
+    line-height: $line-height;
     margin: 0;
     span { display: inline-block }
 
@@ -64,48 +175,25 @@ pre {
         }
 
     }
-
-    &.shell {
-        span {
-            &.user-n-machine { color: $green }
-            &.dir { color: $blue }
-        }
-    }
 }
 
-
-
-footer {
-    position: absolute;
-    bottom: 1em;
-
-    font-size: 11px;
-
-    ul {
-        margin: 0;
-        padding: 0;
-
-        li { list-style-type: none }
+p.shell {
+    span {
+        &.user-n-machine { color: $green }
+        &.dir { color: $blue }
     }
 }
-
-
 
 // definitions for light and dark modes of the site
 body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 .--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
 
-/* Inline styles */
+// Inline styles
 
-span.text {
-    a {
-        &.www { color: $violet }
-        &.email { color: $yellow }
-        &.github { color: $green }
-        &.twitter { color: $cyan }
-    }
+a {
+    &.www { color: $violet }
+    &.email { color: $yellow }
+    &.gh { color: $green } // github
+    &.twt { color: $cyan } // twitter
 }
 
-a#toggle {
-    text-decoration: none;
-}

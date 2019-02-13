@@ -8,12 +8,14 @@ $bold-size: 0.05ex;
     color: $primary;
     background: $background;
 
-    h1 { color: $emphasis }
+    h1, h2, h3, h4 { color: $emphasis }
 
     ::selection { background: $background-highlight }
     ::-moz-selection { background: $background-highlight }
 
     a { color: $emphasis }
+
+    :before, :after { color: $secondary }
 
     #toggle-box { @include bold($primary) }
 
