@@ -1,14 +1,19 @@
 ---
 layout: ascii
-title: Home
-
+title: /home/matthew/
 ---
-
-{% include shell.html exp="cat license.txt" %}
 
 {% include card.html %}
 
-{% include shell.html exp="cat projects-list.txt" %}
+## Welcome
+
+Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard :)
+
+On my off-time, which I may too generously reward myself, I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the dishes, it's podcasts. So many podcasts.
+
+## What I'm up to
+
+I'm working on my first video game right now. Slow going as I'm figuring out how to do things (and also when you shouldn't do things as a solo dev), but I am quite excited for the future. Not much to share yet, sorry!
 
 ## Projects
 
