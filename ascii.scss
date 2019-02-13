@@ -139,11 +139,12 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 100%;
 
+    padding: 1em;
     font-size: 11px;
     text-align: right;
 
