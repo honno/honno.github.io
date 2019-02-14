@@ -9,11 +9,11 @@ title: /home/matthew/
 
 Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard :)
 
-On my off-time, which I may too generously reward myself, I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the dishes, it's podcasts. So many podcasts.
+On my off-time (which I may too generously reward myself) I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the dishes, it's podcasts. So many podcasts.
 
-## What I'm up to
+## What I've been up to
 
-I'm working on my first video game right now. Slow going as I'm figuring out how to do things (and also when you shouldn't do things as a solo dev), but I am quite excited for the future. Not much to share yet, sorry!
+I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and seemingly more-so when you shouldn't do things as a solo dev but still spend so much time on it anyway. But! I am quite excited for the future. Not much to share yet, sorry~
 
 ## Projects
 
@@ -43,7 +43,6 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     : [GitHub](https://github.com/Honno/quine-archive){: class="gh"}
     
     Attempt to automatically generate huffman coded archive formatted files as quines. Troubleshooting got *intense* and I thought I should focus on actually useful things, but it's something want to return to as it's nearly there.
-  
   
     * Python
   
