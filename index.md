@@ -5,7 +5,7 @@ title: /home/matthew/
 
 {% include card.html %}
 
-## Welcome
+## About
 
 Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard :)
 
