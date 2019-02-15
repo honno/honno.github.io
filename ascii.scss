@@ -113,7 +113,7 @@ main {
                 dd { float: right }
             }
 
-            ul {
+            ul.tools {
                 margin: 0 0 1em 1em;
 
                 list-style: none;
@@ -127,9 +127,8 @@ main {
                     display: inline;
 
                     &:before { content: none }
-                    /*&:before { content: none }
-                    &:after { content: '\00a0|' }
-                    &:last-child:after { content: none }*/
+
+                    &.hover { background-color: $violet }
                 }
             }
         }

@@ -19,6 +19,8 @@ $bold-size: 0.05ex;
 
     #toggle-box { @include bold($primary) }
 
+    ul.tools > li.hover { color: $background }
+
     pre {
         &.art {
             span {
