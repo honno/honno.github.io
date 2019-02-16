@@ -1,23 +1,15 @@
----
-layout: ascii
-title: /home/matthew/
----
-
-{% include card.html %}
-
 ## About
 
-Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard :)
+Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard ;)
 
-On my off-time (which I may too generously reward myself) I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the dishes, it's podcasts. So many podcasts.
+On my off-time (which I may too generously reward myself) I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the chores, it's podcasts. So many podcasts.
 
 ## What I've been up to
 
-I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and seemingly more-so when you shouldn't do things as a solo dev but still spend so much time on it anyway. But! I am quite excited for the future. Not much to share yet, sorry~
+I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and more-so when you shouldn't do things as a solo dev but still do anyway, erm. I am quite excited for the future regardless, just there's not much to share yet, sorry~
 
 ## Projects
 
-<script src="/tools-highlight.js"></script>
 * ### 2019
   * matthewbarber.io
     : [GitHub](https://github.com/Honno/Honno.github.io){: class='gh'}

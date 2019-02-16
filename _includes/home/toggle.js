@@ -1,11 +1,8 @@
----
----
+var folder = '/assets/home/';
 
-const folder = 'toggle/';
-
-const favicon = $('link[rel="shortcut icon"]');
-const body = $('body');
-const space = $('#toggle');
+var favicon = $('link[rel="shortcut icon"]');
+var body = $('body');
+var space = $('#toggle');
 
 space.load(folder+'moon.txt');
 

@@ -8,11 +8,11 @@ var occupation = 'Student';
 
 var ethnicity = 'British & Indian';
 var residence = 'Southend-on-Sea, UK';
-const descriptions = [ // 30 char max
+var descriptions = [ // 30 char max
     "Creates useless easter eggs",
     "Opinionated about TV shows",
-    "Took ages making this site",
-    "Really into tea",
+    "Took too long making this",
+    "Spends alot on tea",
     "Uses light IDE themes",
     "Enjoys Taylor Swift post-1989",
     "Reads flavour notes of 99p beer",

@@ -1,0 +1,6 @@
+* [Roboto font](https://fonts.google.com/specimen/Roboto) by [_Christian Robertson_](http://christianrobertson.com/) and other smart people at Google under [Apache 2.0](https://github.com/google/roboto/blob/master/LICENSE)
+* ASCII art inspired from work by _Joan Stark_ (search her pioneering art online!)
+* Colour definitions from [Solarized palette](https://ethanschoonover.com/solarized) by [_Ethan Schoonover_](https://ethanschoonover.com/)
+* [Website source](https://github.com/Honno/Honno.github.io) released under [MIT](https://github.com/Honno/Honno.github.io/blob/master/LICENSE.md)
+* Hosted via [GitHub Pages](https://pages.github.com/)
+* <span id="heart"><3</span>

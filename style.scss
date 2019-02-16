@@ -2,8 +2,8 @@
 ---
 
 /* Imports */
-@import "colours";
-@import "mixins";
+@import "home/colours";
+@import "home/mixins";
 
 /* Variables */
 $font-stack: 'Roboto Mono', monospace;
@@ -203,3 +203,28 @@ a {
     &.twt { color: $cyan } // twitter
 }
 
+/* Responsive stuff */
+
+pre.art { overflow: hidden }
+/*
+@media screen and (max-width: 80ex) {
+    #toggle-box, footer { display: none !important }
+}
+
+@media only screen and (max-width: 600px) {
+    body { font-size: 36px }
+}
+
+@media only screen and (min-width: 600px) {
+    body { font-size: 40px }
+}
+
+@media only screen and (min-width: 768px) {
+    body { font-size: 36px }
+    main { width: 100% }
+}
+
+@media only screen and (min-width: 1280px) {
+}
+
+*/
