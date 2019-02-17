@@ -61,79 +61,75 @@ body {
 }
 
 main {
-    margin: 1em 0;
+    margin: 1rem 0;
+
+    width: 100%;
     max-width: 80ex;
+}
 
-    h2 {
-        &:before { content: '#\00a0' }
+h2:before { content: '#\00a0' }
+
+p {
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+table, tr, td {
+    padding: 0;
+    margin: 0;
+    height: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+
+    &:before {
+        content: '+\00a0';
+        float: left;
     }
 
-    p {
-        margin: 0 0 1em;
-        padding: 0;
-    }
+    h3 { margin: 0 0 1rem }
 
-    table, tr, td {
-        padding: 0;
-        margin: 0;
-        height: 1em;
-    }
+    & > ul > li {
+        margin: 0 0 1rem 1em;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+        &:before { content: '>\00a0' }
 
-    li {
-        margin: 0;
-        padding: 0;
-
-        &:before {
-            content: '+\00a0';
-            float: left;
+        p {
+            margin: 0 0 1rem 1em;
         }
 
-        h3 { margin: 0 0 1em }
+        dl {
+            margin: 0 0 1rem;
 
-        & > ul > li {
-            margin: 0 0 1em 1em;
+            dt, dd { display: inline-block }
+            dt { font-weight: bold }
+            dd { float: right }
+        }
 
-            &:before { content: '>\00a0' }
+        ul.tools {
+            margin: 0 0 1rem 1em;
 
-            p {
-                margin: 0 0 1em 1em;
-            }
+            list-style: none;
+            display: inline;
 
-            dl {
-                margin: 0 0 1em;
+            &:before { content: 'Tools:' }
 
-                dt, dd { display: inline-block }
-                dt { font-weight: bold }
-                dd { float: right }
-            }
-
-            ul.tools {
-                margin: 0 0 1em 1em;
-
-                list-style: none;
+            li {
+                margin: 0;
+                padding: 0;
                 display: inline;
 
-                &:before { content: 'Tools:' }
-
-                li {
-                    margin: 0;
-                    padding: 0;
-                    display: inline;
-
-                    &:before { content: none }
-
-                    &.hover { background-color: $violet }
-                }
+                &:before { content: none }
             }
         }
-
-
     }
 }
 
@@ -143,20 +139,22 @@ footer {
     right: 0;
     width: 100%;
 
-    padding: 1em;
-    font-size: 11px;
+    padding: 1rem;
+    font-size: 0.9rem;
     text-align: right;
 
     ul {
         margin: 0;
         padding: 0;
 
-        li { list-style-type: none }
+        li {
+            list-style-type: none;
+            &:after { content: ' |' }
+        }
     }
 
     a { text-decoration-style: dashed }
 
-    span#heart { color: $red }
 }
 
 /* Arty stuff */
@@ -165,66 +163,9 @@ pre {
     line-height: $line-height;
     margin: 0;
     span { display: inline-block }
-
-    &.art {
-        span {
-            &.logo-fill { @include bold($red) }
-
-            &.banner { color: $green }
-            &.banner-stars { color: $yellow }
-
-            &.skin { color: $orange }
-            &.glasses { color: $blue }
-            &.shirt { color: $magenta }
-        }
-
-    }
 }
 
-p.shell {
-    margin: 0;
+/* Assign respective Solarized colours to rebase */
 
-    span {
-        &.user-n-machine { color: $green }
-        &.dir { color: $blue }
-    }
-}
-
-// definitions for light and dark modes of the site
 body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 .--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
-
-// Inline styles
-
-a {
-    &.www { color: $violet }
-    &.email { color: $yellow }
-    &.gh { color: $green } // github
-    &.twt { color: $cyan } // twitter
-}
-
-/* Responsive stuff */
-
-pre.art { overflow: hidden }
-/*
-@media screen and (max-width: 80ex) {
-    #toggle-box, footer { display: none !important }
-}
-
-@media only screen and (max-width: 600px) {
-    body { font-size: 36px }
-}
-
-@media only screen and (min-width: 600px) {
-    body { font-size: 40px }
-}
-
-@media only screen and (min-width: 768px) {
-    body { font-size: 36px }
-    main { width: 100% }
-}
-
-@media only screen and (min-width: 1280px) {
-}
-
-*/

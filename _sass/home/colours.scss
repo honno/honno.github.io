@@ -1,0 +1,83 @@
+/*
+ * Define all the colours used.
+ *
+ * Colour definitions taken from Ethan Schoonover's excellent Solarized palette.
+ * More information can be found at:
+ *   http://ethanschoonover.com/solarized
+*/
+
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+
+/* Cross-compatible code block boldness */
+
+$bold-size: 0.5px;
+@mixin bold($colour) {
+    color: $colour;
+    text-shadow: -$bold-size 0  $colour, $bold-size 0  $colour;
+}
+
+/* Light/Dark theme colour assignment */
+
+@mixin rebase($emphasis, $primary, $secondary, $background, $background-highlight) {
+    color: $primary;
+    background: $background;
+
+    h1, h2, h3, h4 { color: $emphasis }
+
+    ::selection { background: $background-highlight }
+    ::-moz-selection { background: $background-highlight }
+
+    a { color: $emphasis }
+
+    :before, :after { color: $secondary }
+
+    #toggle-box { @include bold($primary) }
+
+    ul.tools > li.hover { background-color: $violet }
+
+    pre.art > span {
+        &.label { color: $secondary }
+        &.text { color: $primary }
+
+        &.border { color: $primary }
+        &.border-highlight { color: $secondary }
+
+        &.logo { color: $emphasis }
+        &.logo-fill { color: $red }
+        &.logo-emphasised { @include bold($emphasis) }
+
+        &.banner { color: $green }
+        &.banner-stars { color: $yellow }
+        &.banner-text { color: $secondary }
+        &.banner-text-highlight { color: $secondary }
+
+        &.photo-border { color: $secondary }
+        &.beauty-spot { color: $emphasis }
+        &.hair { @include bold($primary) }
+        &.skin { color: $orange }
+        &.glasses { color: $blue }
+        &.shirt { color: $magenta }
+    }
+
+    a {
+        &.www { color: $violet }
+        &.email { color: $yellow }
+        &.gh { color: $green } // github
+        &.twt { color: $cyan } // twitter
+    }
+}
