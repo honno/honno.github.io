@@ -21,14 +21,17 @@
         <div id="toggle-box">
             <pre id="toggle" style="cursor: pointer"></pre>
         </div>
-        <main>
-            {% include home/card.html %}
-            {% capture include %}{% include home/main-text.md %}{% endcapture %}{{ include | markdownify }}
-        </main>
-        <footer>
-            {% capture include %}{% include home/footer-text.md %}{% endcapture %}{{ include | markdownify }}
-        </footer>
-
+        <div id="wrapper">
+            <main>
+                {% include home/card.html %}
+                {% capture include %}{% include home/main-text.md %}{% endcapture %}{{ include | markdownify }}
+            </main>
+            <div id="side">
+                <footer>
+                    {% capture include %}{% include home/footer-text.md %}{% endcapture %}{{ include | markdownify }}
+                </footer>
+            </div>
+        </div>
         <script>
          $(document).ready(() => {
              {% include home/toggle.js %}
