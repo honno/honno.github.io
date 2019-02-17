@@ -3,4 +3,3 @@
 * Colour definitions from [Solarized palette](https://ethanschoonover.com/solarized) by [_Ethan Schoonover_](https://ethanschoonover.com/)
 * [Website source](https://github.com/Honno/Honno.github.io) released under [MIT](https://github.com/Honno/Honno.github.io/blob/master/LICENSE.md)
 * Hosted via [GitHub Pages](https://pages.github.com/)
-* <span id="heart"><3</span>
