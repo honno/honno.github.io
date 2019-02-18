@@ -10,17 +10,13 @@ var ethnicity = 'British & Indian';
 var residence = 'Southend-on-Sea, UK';
 var descriptions = [ // 30 char max
     "Creates useless easter eggs",
-    "Opinionated about TV shows",
     "Took too long making this",
-    "Spends alot on tea",
     "Uses light IDE themes",
-    "Enjoys Taylor Swift post-1989",
     "Reads flavour notes of 99p beer",
-    "Plays bad PC games from 2006",
+    "Plays bad PC games from 2000s",
     "Still owns a One Plus One",
-    "Spends £30/yr on this domain",
+    "Spends too much on this domain",
     "Regrets site project structure",
-    "Can't think of much to say here",
     "Rarely has such good hair"
 ];
 
@@ -49,20 +45,10 @@ var twitter_href = 'https://twitter.com/' + twitter;
 
 // Apply content to card
 
-pad_n_span('first_name', first_name);
-pad_n_span('last_name', last_name);
-pad_n_span('alias', alias);
 pad_n_span('age', age);
-pad_n_span('gender', gender);
-pad_n_span('occupation', occupation);
-pad_n_span('ethnicity', ethnicity);
-pad_n_span('residence', residence);
 pad_n_span('desc', description);
 
-pad_n_span_link('website', www, www_href);
-pad_n_span_link('email', email, email_href);
-pad_n_span_link('github', github_tag, github_href);
-pad_n_span_link('twitter', twitter_tag, twitter_href);
+pad_n_span('mobile-age', age);
 
 // Helpers
 

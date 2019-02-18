@@ -75,6 +75,9 @@ $bold-size: 0.25px;
         &.skin { color: $orange }
         &.glasses { color: $blue }
         &.shirt { color: $magenta }
+
+        // Mobile exclusives
+        &.mobile-name { color: $emphasis }
     }
 
     a {
