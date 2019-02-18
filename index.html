@@ -18,15 +18,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="toggle-box">
-            <pre id="toggle" style="cursor: pointer"></pre>
-        </div>
         <div id="wrapper">
             <main>
                 {% include home/card.html %}
                 {% capture include %}{% include home/main-text.md %}{% endcapture %}{{ include | markdownify }}
             </main>
             <div id="side">
+                <div id="toggle-box">
+                    <pre id="toggle" style="cursor: pointer"></pre>
+                </div>
                 <footer>
                     {% capture include %}{% include home/footer-text.md %}{% endcapture %}{{ include | markdownify }}
                 </footer>
