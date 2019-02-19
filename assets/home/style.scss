@@ -7,7 +7,6 @@
 /* Variables */
 $font-stack: 'Roboto Mono', monospace;
 $font-size: 12px;
-$card-break: 560px; // roughly width of landscape card
 $max-main-width: 80ex;
 $line-height: calc(1.125 * $font-size);
 
@@ -57,6 +56,7 @@ ul {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 #wrapper {
@@ -68,9 +68,16 @@ body {
 }
 
 main {
-    margin: $font-size;
-    width: 100%;
+    margin: 1rem;
     max-width: $max-main-width;
+}
+
+#card-container {
+    text-align: center;
+
+    pre {
+        display: inline-block;
+    }
 }
 
 #side {
@@ -97,9 +104,7 @@ footer {
 
 /* Stylin stuff */
 
-pre.art {
-    margin: 0;
-}
+#card-vertical { display: none !important }
 
 h2:before { content: '#\00a0' }
 
@@ -177,12 +182,11 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 
 @media (max-width: 100ex) {
     #wrapper {
-        padding: $font-size;
         max-width: 80ex;
         flex-direction: column;
     }
 
-    main { margin: 0 }
+    main { margin-bottom: 0 }
 
     #side, #toggle-box, footer {
         position: static;
@@ -200,6 +204,7 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 
 }
 
-@media (max-width: $card-break) {
-    pre.art { display: none !important }
+@media (max-width: $max-main-width) {
+    #card-horizontal { display: none !important }
+    #card-vertical { display: block !important }
 }

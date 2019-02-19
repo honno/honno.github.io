@@ -20,7 +20,9 @@
     <body>
         <div id="wrapper">
             <main>
+                <div id="card-container">
                 {% include home/card.html %}
+                </div>
                 {% capture include %}{% include home/main-text.md %}{% endcapture %}{{ include | markdownify }}
             </main>
             <div id="side">
