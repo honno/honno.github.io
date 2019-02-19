@@ -6,7 +6,7 @@ On my off-time (which I may too generously reward myself) I'm playing weird vide
 
 ## What I've been up to
 
-I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and more-so when you shouldn't do things as a solo dev (but still do anyway, oops). I am quite excited for the future regardless---not much to share yet sorry~
+I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and more-so when you shouldn't do things as a solo dev (but still do anyway, oops). I am quite excited for the future regardless, just there's not much to share yet~
 
 ## Projects
 
