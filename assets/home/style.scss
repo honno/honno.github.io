@@ -255,10 +255,8 @@ html.mobile {
 }
 
 @media (max-width: $max-main-width) {
+    html { font-size: $rel-font-size }
+
     @include rotate-card;
     @include full-width;
-}
-
-@media (max-width: 600px) {
-    html { font-size: $rel-font-size }
 }
