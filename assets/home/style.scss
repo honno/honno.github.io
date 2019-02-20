@@ -7,7 +7,7 @@
 /* Variables */
 $font-stack: 'Roboto Mono', monospace;
 $font-size: 12px;
-$rel-font-size: calc($font-size + 4vw);
+$rel-font-size: calc(#{$font-size} + 4vw);
 $max-main-width: 560px;
 $line-height: 1.125rem;
 
@@ -24,7 +24,6 @@ body {
 
 pre {
     font-family: $font-stack;
-    font-size: 1rem;
     line-height: $line-height;
 }
 
@@ -75,9 +74,8 @@ main {
 }
 
 #card-container { text-align: center }
-
-pre.class { display: inline-block }
-pre#card-horizontal { font-size: 1rem }
+pre.art { display: inline-block }
+#card-vertical { display: none }
 
 #side {
     position: -webkit-sticky;
@@ -103,7 +101,11 @@ footer {
 
 /* Stylin stuff */
 
-#card-vertical { display: none !important }
+#card-horizontal { font-size: $font-size }
+#card-vertical {
+    font-size: 4vw;
+    line-height: 1.125em;
+}
 
 h2:before { content: '#\00a0' }
 
@@ -184,27 +186,77 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
     #wrapper {
         max-width: $max-main-width;
         flex-direction: column;
+
+        main { margin-bottom: 0 }
+
+        #side {
+            &,
+            & > #toggle-box,
+            & > footer {
+                position: static;
+                top: auto; right: auto; bottom: auto; left: auto;
+                height: auto;
+            }
+
+            display: flex;
+
+            align-items: center;
+            flex-direction: column;
+
+            footer {
+                text-align: center;
+                width: 100%;
+            }
+        }
     }
+}
 
-    main { margin-bottom: 0 }
-
-    #side, #toggle-box, footer {
-        position: static;
-        top: auto; right: auto; bottom: auto; left: auto;
-        height: auto;
+@mixin rotate-card {
+    #wrapper > main > #card-container {
+        #card-horizontal { display: none !important }
+        #card-vertical { display: block !important }
     }
+}
 
-    #side {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+@mixin full-width {
+    #wrapper {
+        max-width: none;
+        width: 100%;
+
+        main {
+            width: auto;
+        }
+
+        #side > #toggle-box > pre {
+            font-size: 5vw;
+            line-height: 6vw;
+        }
     }
+}
 
-    footer { text-align: center }
+// Forced mobile
 
+html.mobile {
+    font-size: $rel-font-size;
+
+    body {
+        @include collapse-sidebar;
+        @include rotate-card;
+        @include full-width;
+    }
+}
+
+// Media queries
+
+@media (max-width: 1025px) {
+    @include collapse-sidebar
 }
 
 @media (max-width: $max-main-width) {
-    #card-horizontal { display: none !important }
-    #card-vertical { display: block !important }
+    @include rotate-card;
+    @include full-width;
+}
+
+@media (max-width: 600px) {
+    html { font-size: $rel-font-size }
 }

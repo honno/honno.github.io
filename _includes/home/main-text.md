@@ -14,7 +14,7 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
   * **matthewbarber.io**
     : [GitHub](https://github.com/Honno/Honno.github.io){: class='gh'}
 
-    My strange portfolio website. Now responsive on most modern devices! The development enviroment look design comes from a desire to present myself as a hip hacker type---I'm not quite sure to whom though.
+    My strange portfolio website. Now even responsive on some modern devices! The development enviroment look design comes from a desire to present myself as a hip hacker type---I'm not quite sure to whom though.
     
     * JS
     * jQuery
