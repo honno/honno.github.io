@@ -7,8 +7,9 @@
 /* Variables */
 $font-stack: 'Roboto Mono', monospace;
 $font-size: 12px;
-$max-main-width: 80ex;
-$line-height: calc(1.125 * $font-size);
+$rel-font-size: calc($font-size + 4vw);
+$max-main-width: 560px;
+$line-height: 1.125rem;
 
 /* General niceties */
 
@@ -23,7 +24,8 @@ body {
 
 pre {
     font-family: $font-stack;
-    font-size: $font-size;
+    font-size: 1rem;
+    line-height: $line-height;
 }
 
 a#toggle {
@@ -69,16 +71,13 @@ body {
 
 main {
     margin: 1rem;
-    max-width: $max-main-width;
+    width: $max-main-width;
 }
 
-#card-container {
-    text-align: center;
+#card-container { text-align: center }
 
-    pre {
-        display: inline-block;
-    }
-}
+pre.class { display: inline-block }
+pre#card-horizontal { font-size: 1rem }
 
 #side {
     position: -webkit-sticky;
@@ -179,10 +178,11 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 .--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
 
 /* Responsive wizardry */
+// Mixins
 
-@media (max-width: 100ex) {
+@mixin collapse-sidebar {
     #wrapper {
-        max-width: 80ex;
+        max-width: $max-main-width;
         flex-direction: column;
     }
 
