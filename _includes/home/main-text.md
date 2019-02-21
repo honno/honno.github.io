@@ -2,7 +2,7 @@
 
 Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard ;)
 
-On my off-time (which I may too generously reward myself) I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the chores, it's podcasts. So many podcasts.
+On my off-time I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the chores, it's podcasts. So many podcasts.
 
 ## What I've been up to
 
