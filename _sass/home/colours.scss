@@ -48,9 +48,11 @@ $bold-size: 0.25px;
 
     #toggle-box { @include bold($primary) }
 
-    ul.tools > li.hover {
+    ul.langs, ul.tools {
+        & > li.hover {
         color: $background;
         background-color: $orange;
+        }
     }
 
     pre.art > span {

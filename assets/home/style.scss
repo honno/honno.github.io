@@ -132,17 +132,15 @@ ul#projects-list > li {
             dd { float: right }
         }
 
-        p, ul.tools { margin: 0 0 1rem 1rem }
+        p, ul { margin: 0 0 1rem 1rem }
 
-        ul.tools {
+        ul.langs, ul.tools {
+            margin: 0 0 1rem;
+
             list-style: none;
             display: inline-block;
 
-            &:before { content: 'Tools:\00a0' }
-
             li {
-                margin: 0;
-                padding: 0;
                 display: inline;
 
                 &:before { content: none }
@@ -231,12 +229,13 @@ body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
 
         #side > #toggle-box > pre {
             font-size: 5vw;
-            line-height: 6vw;
+            line-height: 5.5vw;
         }
+
     }
 }
 
-// Forced mobile
+// Forced mobile style
 
 html.mobile {
     font-size: $rel-font-size;

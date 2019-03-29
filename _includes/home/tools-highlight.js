@@ -1,16 +1,29 @@
-var tools_dict = {};
 var tools = $('ul#projects-list').find('ul.tools').children();
-tools.each((index, element) => {
-    var tool = $(element).text();
-    if (!(tool in tools_dict)) {
-        tools_dict[tool] = [];
-    }
-    tools_dict[tool].push($(element));
-});
+var tools_dict = generate_words_map(tools);
 
-tools.hover((event) => {
-    var tool = $(event.currentTarget).text();
-    tools_dict[tool].forEach((li) => {
-        $(li).toggleClass('hover');
+var langs = $('ul#projects-list').find('ul.langs').children();
+var langs_dict = generate_words_map(langs);
+
+apply_uniform_hover(tools, tools_dict);
+apply_uniform_hover(langs, langs_dict);
+
+// Helpers
+function generate_words_map(selector) {
+    let dict = {}
+    selector.each((index, element) => {
+        var word = $(element).text();
+        if (!(word in dict)) {
+            dict[word] = [];
+        }
+        dict[word].push($(element));
     });
-});
+    return dict;
+}
+function apply_uniform_hover(selector, words_map) {
+    selector.hover((event) => {
+        var word = $(event.currentTarget).text();
+        words_map[word].forEach((li) => {
+            $(li).toggleClass('hover');
+        });
+    });
+}

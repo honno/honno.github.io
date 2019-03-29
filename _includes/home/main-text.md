@@ -16,9 +16,12 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
 
     My strange portfolio website. Now even responsive on some modern devices! The development enviroment look design comes from a desire to present myself as a hip hacker type---I'm not quite sure to whom though.
     
-    * JS
-    * jQuery
+    * HTML
     * Sass
+    * JavaScript
+    {: class='langs'}
+
+    * jQuery
     * Jekyll
     {: class='tools'}
  
@@ -28,8 +31,12 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
   
     Platform for university students to content manage and interact with events.
     
-    * JS
-    * Node
+    * Pug
+    * CSS
+    * JavaScript
+    {: class='langs'}
+
+    * Node.js
     * Express
     * MongoDB
     {: class='tools'}
@@ -40,7 +47,7 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     Attempt to automatically generate huffman coded archive formatted files as quines. Troubleshooting got *intense* and I thought I should focus on actually useful things, but it's nearly there. On the TODO list.
   
     * Python
-    {: class='tools'}
+    {: class='langs'}
   
   * **Twitter Anew**
     : [GitHub](https://github.com/Honno/twitter-anew){: class='gh'}
@@ -48,7 +55,7 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     Tool to make your twitter experience less daunting if you follow a ton of folks, involving understanding and resenting the Twitter API. Now has less purpose due to the platform's introduction of the mute feature.
 
     * Python
-    {: class='tools'}
+    {: class='langs'}
 
 * ### 2017
   * **Expert system** 
@@ -56,8 +63,8 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     
     Implementation of a forward/backward reasoning system, ala an inference engine for an expert system.
     
-    * Lisp
-    {: class='tools'}
+    * Common Lisp
+    {: class='langs'}
     
   * **Space Hermit**
     : [GitHub](https://github.com/Honno/space-hermit){: class='gh'}
@@ -65,6 +72,8 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     POV animation of the inside of a cockpit in space. Particular attention was made to make it *feel* realistic, much to the disinterest of anyone.
     
     * Java
+    {: class='langs'}
+
     * LWJGL
     {: class='tools'}
     
@@ -74,5 +83,5 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     Various utilities for a user to find out information pertaining to use of the Hong Kong train network.
     
     * Java
-    {: class='tools'}
+    {: class='langs'}
 {: id='projects-list'}
