@@ -124,7 +124,7 @@ footer {
   font-size: $font-size;
 }
 #card-vertical {
-  font-size: 4vw;
+  font-size: 4.5vw;
   line-height: 1.125em;
 }
 
@@ -296,9 +296,13 @@ body,
       width: auto;
     }
 
+    #card-vertical {
+      margin-top: 0;
+    }
+
     #side > #toggle-box > pre {
-      font-size: 5vw;
-      line-height: 5.5vw;
+      font-size: 4vw;
+      line-height: 5vw;
     }
 
     h2,
