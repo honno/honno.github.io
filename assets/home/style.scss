@@ -318,10 +318,11 @@ body,
       display: block !important;
       dt,
       dd {
+        margin-left: 0 !important;
         display: list-item !important;
       }
       dd {
-        float: left !important;
+        float: none !important;
       }
     }
     ul.langs,
