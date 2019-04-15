@@ -53,6 +53,8 @@ $bold-size: 0.25px;
         color: $background;
         background-color: $orange;
         }
+
+        &:before { color: $secondary }
     }
 
     pre.art > span {

@@ -5,7 +5,7 @@
 @import "home/colours";
 
 /* Variables */
-$font-stack: 'Roboto Mono', monospace;
+$font-stack: "Roboto Mono", monospace;
 $font-size: 12px;
 $rel-font-size: calc(#{$font-size} + 4vw);
 $max-main-width: 560px;
@@ -14,248 +14,318 @@ $line-height: 1.125rem;
 /* General niceties */
 
 html {
-    font-size: $font-size;
+  font-size: $font-size;
 }
 
 body {
-    font-family: $font-stack;
-    font-size: 1rem;
+  font-family: $font-stack;
+  font-size: 1rem;
 }
 
 pre {
-    font-family: $font-stack;
-    line-height: $line-height;
+  font-family: $font-stack;
+  line-height: $line-height;
 }
 
 a#toggle {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-    font-size: $font-size; font-size: 1rem;
-    display: inline-block;
-    margin: .125rem 0 1rem;
-    padding: 0;
+h1,
+h2,
+h3,
+h4 {
+  font-size: $font-size;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.125rem 0 1rem;
+  padding: 0;
 }
 
-h1, h2, h3, h4, b { font-weight: 600; }
+h1,
+h2,
+h3,
+h4,
+b {
+  font-weight: 600;
+}
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-:before { float: left }
-:before, :after {
-    white-space: pre;
-    font-weight: normal;
+:before {
+  float: left;
+}
+:before,
+:after {
+  white-space: pre;
+  font-weight: normal;
 }
 
 /* Blocks or something */
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 #wrapper {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 
-    width: 100%;
+  width: 100%;
 }
 
 main {
-    margin: 1rem;
-    width: $max-main-width;
+  margin: 1rem;
+  width: $max-main-width;
 }
 
-#card-container { text-align: center }
-pre.art { display: inline-block }
-#card-vertical { display: none }
+#card-container {
+  text-align: center;
+}
+pre.art {
+  display: inline-block;
+}
+#card-vertical {
+  display: none;
+}
 
 #side {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #toggle-box {
-    position: absolute;
-    right: 1rem;
+  position: absolute;
+  right: 1rem;
 
-    display: inline-block;
+  display: inline-block;
 }
 
 footer {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 /* Stylin stuff */
 
-#card-horizontal { font-size: $font-size }
+#card-horizontal {
+  font-size: $font-size;
+}
 #card-vertical {
-    font-size: 4vw;
-    line-height: 1.125em;
+  font-size: 4vw;
+  line-height: 1.125em;
 }
 
-h2:before { content: '#\00a0' }
+h2:before {
+  content: "#\00a0";
+}
 
 p {
-    margin: 0 0 1rem;
-    padding: 0;
+  margin: 0 0 1rem;
+  padding: 0;
 }
 
-ul#projects-list > li {
-    margin: 0;
-    padding: 0;
+ul#projects-list {
+  display: block;
 
-    &:before { content: '+\00a0' }
+  li {
+    margin: 0;
+
+    &:before {
+      content: "+\00a0";
+    }
 
     & > ul > li {
-        margin: 0 0 0 1rem;
+      margin: 0 0 0 1rem;
 
-        &:before { content: '>\00a0' }
+      &:before {
+        content: ">\00a0";
+      }
 
-        dl {
-            margin: 0 0 1rem;
+      dl {
+        margin: 0 0 1rem;
 
-            dt, dd { display: inline-block }
-            dd { float: right }
+        dt,
+        dd {
+          display: inline-block;
         }
-
-        p, ul { margin: 0 0 1rem 1rem }
-
-        ul.langs, ul.tools {
-            margin: 0 0 1rem;
-
-            list-style: none;
-            display: inline-block;
-
-            li {
-                display: inline;
-
-                &:before { content: none }
-            }
+        dd {
+          float: right;
         }
+      }
+
+      p,
+      ul {
+        margin: 0 0 1rem 1rem;
+      }
+
+      ul.langs,
+      ul.tools {
+        margin: 0 0 1rem;
+
+        list-style: none;
+        display: inline-block;
+
+        li {
+          margin: 0;
+          display: inline;
+
+          &:before {
+            content: none;
+          }
+        }
+      }
+
+      ul.langs:before {
+        content: 'Langs:\00a0';
+        margin-left: 1rem;
+      }
+
+      ul.tools:before {
+        content: 'Tools:\00a0'
+      }
     }
+  }
 }
 
 #toggle-box {
-    white-space: pre-line;
+  white-space: pre-line;
 
-    pre {
-        font-size: 5px;
-        line-height: 6px;
-    }
+  pre {
+    font-size: 5px;
+    line-height: 6px;
+  }
 }
 
 footer {
-    font-size: 0.9rem;
-    text-align: right;
+  font-size: 0.9rem;
+  text-align: right;
 
-    ul {
-        margin: 0;
-        padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
 
-        li { list-style-type: none }
+    li {
+      list-style-type: none;
     }
+  }
 
-    a { text-decoration-style: dotted }
+  a {
+    text-decoration-style: dotted;
+  }
 }
 
 /* Assign respective Solarized colours to rebase */
 
-body, .--light { @include rebase($base01, $base00, $base1, $base3, $base2) }
-.--dark { @include rebase($base1, $base0, $base01, $base03, $base02) }
+body,
+.--light {
+  @include rebase($base01, $base00, $base1, $base3, $base2);
+}
+.--dark {
+  @include rebase($base1, $base0, $base01, $base03, $base02);
+}
 
 /* Responsive wizardry */
 // Mixins
 
 @mixin collapse-sidebar {
-    #wrapper {
-        max-width: $max-main-width;
-        flex-direction: column;
+  #wrapper {
+    max-width: $max-main-width;
+    flex-direction: column;
 
-        main { margin-bottom: 0 }
-
-        #side {
-            &,
-            & > #toggle-box,
-            & > footer {
-                position: static;
-                top: auto; right: auto; bottom: auto; left: auto;
-                height: auto;
-            }
-
-            display: flex;
-
-            align-items: center;
-            flex-direction: column;
-
-            margin-bottom: 1rem;
-
-            footer {
-                text-align: center;
-                width: 100%;
-            }
-        }
+    main {
+      margin-bottom: 0;
     }
+
+    #side {
+      &,
+      & > #toggle-box,
+      & > footer {
+        position: static;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        height: auto;
+      }
+
+      display: flex;
+
+      align-items: center;
+      flex-direction: column;
+
+      margin-bottom: 1rem;
+
+      footer {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @mixin rotate-card {
-    #wrapper > main > #card-container {
-        #card-horizontal { display: none !important }
-        #card-vertical { display: block !important }
+  #wrapper > main > #card-container {
+    #card-horizontal {
+      display: none !important;
     }
+    #card-vertical {
+      display: block !important;
+    }
+  }
 }
 
 @mixin full-width {
-    #wrapper {
-        max-width: none;
-        width: 100%;
+  #wrapper {
+    max-width: none;
+    width: 100%;
 
-        main {
-            width: auto;
-        }
-
-        #side > #toggle-box > pre {
-            font-size: 5vw;
-            line-height: 5.5vw;
-        }
-
+    main {
+      width: auto;
     }
+
+    #side > #toggle-box > pre {
+      font-size: 5vw;
+      line-height: 5.5vw;
+    }
+  }
 }
 
 // Forced mobile style
 
 html.mobile {
-    font-size: $rel-font-size;
+  font-size: $rel-font-size;
 
-    body {
-        @include collapse-sidebar;
-        @include rotate-card;
-        @include full-width;
-    }
+  body {
+    @include collapse-sidebar;
+    @include rotate-card;
+    @include full-width;
+  }
 }
 
 // Media queries
 
 @media (max-width: 1025px) {
-    @include collapse-sidebar
+  @include collapse-sidebar;
 }
 
 @media (max-width: $max-main-width) {
-    html { font-size: $rel-font-size }
+  html {
+    font-size: $rel-font-size;
+  }
 
-    @include rotate-card;
-    @include full-width;
+  @include rotate-card;
+  @include full-width;
 }

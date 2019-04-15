@@ -37,7 +37,7 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     {: class='langs'}
 
     * Node.js
-    * Express
+    * Express.js
     * MongoDB
     {: class='tools'}
   
