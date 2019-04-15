@@ -189,12 +189,12 @@ ul#projects-list {
       }
 
       ul.langs:before {
-        content: 'Langs:\00a0';
+        content: "Langs:\00a0";
         margin-left: 1rem;
       }
 
       ul.tools:before {
-        content: 'Tools:\00a0'
+        content: "Tools:\00a0";
       }
     }
   }
@@ -299,6 +299,47 @@ body,
     #side > #toggle-box > pre {
       font-size: 5vw;
       line-height: 5.5vw;
+    }
+
+    h2,
+    li {
+      &:before {
+        content: "" !important;
+      }
+    }
+
+    ul,
+    li,
+    p {
+      margin-left: 0 !important;
+    }
+
+    dl {
+      display: block !important;
+      dt,
+      dd {
+        display: list-item !important;
+      }
+      dd {
+        float: left !important;
+      }
+    }
+    ul.langs,
+    ul.tools {
+      display: block !important;
+      &:before {
+        width: 100% !important;
+      }
+      li {
+        display: list-item !important;
+      }
+      & > li.hover {
+        background-color: transparent !important;
+        color: inherit !important;
+      }
+    }
+    ul.langs:before {
+      margin-left: 0 !important;
     }
   }
 }
