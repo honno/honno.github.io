@@ -74,8 +74,6 @@ I've got final year to get on with! Right now my focus is the overly-ambitious f
     : [Source](https://github.com/Honno/twitter-anew){: class='gh'}
     
     Tool to make your twitter experience less daunting if you follow a ton of folks, by way of using and abusing the Twitter API to designate those followed into a list.
-    
-    At the time I accidentally found out putting someone into a list would force a push notification to folks, including verified users who hide non-tick notifications. I used Twitter Anew for a list called "Old", which caused 2000+ users to briefly consider their slow march to death.
 
     * Python
     {: class='langs'}
@@ -103,7 +101,7 @@ I've got final year to get on with! Right now my focus is the overly-ambitious f
   * **MTR traversal**
     : [Source](https://github.com/Honno/mtr-traversal){: class='gh'}
 
-    Various utilities for a user to find out information pertaining to use of the Hong Kong train network. Includes creation of a graph data structure, and implementation of path finding using breadth-first search (in hindsight A* would of been nice).
+    Various utilities for a user to find out information pertaining to use of the Hong Kong train network. Includes creation of a graph data structure, and implementation of path finding using breadth-first search.
     
     * Java
     {: class='langs'}
