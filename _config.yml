@@ -1,10 +1,10 @@
 # Site settings
 title: Matthew Barber
 email: quitesimplymatt@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Personal website of Matthew Barber.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://matthewbarber.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/"
+url: "https://matthewbarber.io/"
 twitter_username: whostolehonno
 github_username: honno
 
@@ -12,5 +12,6 @@ github_username: honno
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 sass:
   sass_dir: _sass

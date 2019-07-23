@@ -1,20 +1,49 @@
-## About
+Hello there, thanks for visiting my site!
 
-Hello there, thanks for visiting my site! The above covers the basics, otherwise it's the typical "I like to create cool things" spiel. I'll let you decide if I suceed in that regard ;)
-
-On my off-time I'm playing weird video games curiously or watching highbrow TV shows pretentiously. And when I'm doing the chores, it's podcasts. So many podcasts.
+About me? The above covers the basics, otherwise my bio is the typical "I like to create cool things" spiel --- I'll let you decide if I succeed in that regard.
 
 ## What I've been up to
 
-I'm working on my first video game right now. Slow going as I'm figuring out how to do things, and more-so when you shouldn't do things as a solo dev (but still do anyway, oops). I am quite excited for the future regardless, just there's not much to share yet~
+I've got final year to get on with! Right now my focus is the overly-ambitious final year project I stupidly had to propose: a penetration test suite for RNG systems. I'm also searching for a job after graduation! <sub>Wanna hook me up?</sub>
 
-## Projects
+## My projects
 
 * ### 2019
-  * **matthewbarber.io**
-    : [GitHub](https://github.com/Honno/Honno.github.io){: class='gh'}
+  * **quine.gz**
+    : [quine.gz](https://blog.matthewbarber.io/downloads/quine.gz){: class='file'}
+    : [Source  (CRC)](https://github.com/Honno/metapp){: class='gh'}
+    : [Article](https://blog.matthewbarber.io/2019/07/22/how-to-make-compressed-file-quines.html){: class='blog'}
+    
+    A GZIP file that decompresses to itself, ad infinitum. Involved the creation of an abstract Lempel-Ziv program that self-expands, which was carefully translated into a DEFLATE compressed data stream using the formats fixed Huffman alphabet.
+    
+    Also required designing a multiprocessing Python script that can find a self-referential CRC32 value, i.e. a checksum that is valid for data that holds itself. Achieved by bruteforcing through the over 4 billion possibilities, inserting the values into a given template file, finding the actual checksum and checking for a match.
+    
+    I explain the whole process in a blog post. It contains too many ASCII charts.
+  
+    * Python
+    {: class='langs'}
 
-    My strange portfolio website. Now even responsive on some modern devices! The development enviroment look design comes from a desire to present myself as a hip hacker type---I'm not quite sure to whom though.
+  * **metapp** *(On hold)*
+    : [Source](https://github.com/Honno/metapp){: class='gh'}
+
+    Meta puzzle platformer about the nature of player/developer relationships. Level design inspired by [Karoshi](https://www.karoshigame.com/) and [100% Logical](https://gamejolt.com/games/100-logical/1268). Designed an auto-dialogue system with dynamic speech bubbles to improve the flow of narrative.
+    
+    Don't have enough time to see it to fruition at the moment :\(
+        
+    * GDScript
+    * C#
+    {: class='langs'}
+
+    * Godot
+    {: class='tools'}
+
+  * **matthewbarber.io** & **The Blorg**
+    : [Source (Portfolio)](https://github.com/Honno/Honno.github.io){: class='gh'}
+    : [Source (Blog)](https://github.com/Honno/blog){: class='gh'}
+
+    My strange website. Now even responsive on some modern devices! The development environment look design comes from a desire to present myself as a hip hacker type---I'm not quite sure to whom though.
+    
+    Also includes a blog with some bespoke JS for interactive behaviour in articles.
     
     * HTML
     * Sass
@@ -27,9 +56,9 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
  
 * ### 2018
   * **University events website**
-    : [GitHub](https://github.com/Honno/events-site){: class='gh'}
+    : [Source](https://github.com/Honno/events-site){: class='gh'}
   
-    Platform for university students to content manage and interact with events.
+    Platform for university students to manage their own or their societies' events, and allow for students to interact with the event pages.
     
     * Pug
     * CSS
@@ -41,35 +70,29 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     * MongoDB
     {: class='tools'}
   
-  * **Quine Archive** *(On hold)*
-    : [GitHub](https://github.com/Honno/quine-archive){: class='gh'}
-    
-    Attempt to automatically generate huffman coded archive formatted files as quines. Troubleshooting got *intense* and I thought I should focus on actually useful things, but it's nearly there. On the TODO list.
-  
-    * Python
-    {: class='langs'}
-  
   * **Twitter Anew**
-    : [GitHub](https://github.com/Honno/twitter-anew){: class='gh'}
+    : [Source](https://github.com/Honno/twitter-anew){: class='gh'}
     
-    Tool to make your twitter experience less daunting if you follow a ton of folks, involving understanding and resenting the Twitter API. Now has less purpose due to the platform's introduction of the mute feature.
+    Tool to make your twitter experience less daunting if you follow a ton of folks, by way of using and abusing the Twitter API to designate those followed into a list.
+    
+    At the time I accidentally found out putting someone into a list would force a push notification to folks, including verified users who hide non-tick notifications. I used Twitter Anew for a list called "Old", which caused 2000+ users to briefly consider their slow march to death.
 
     * Python
     {: class='langs'}
 
 * ### 2017
   * **Expert system** 
-    : [GitHub](https://github.com/Honno/intro-to-ai-labs/blob/master/8/expert.lisp){: class='gh'}
+    : [Source](https://github.com/Honno/intro-to-ai-labs/blob/master/8/expert.lisp){: class='gh'}
     
-    Implementation of a forward/backward reasoning system, ala an inference engine for an expert system.
+    Implementation of a forward/backward reasoning, ala an inference engine for an expert system.
     
     * Common Lisp
     {: class='langs'}
     
   * **Space Hermit**
-    : [GitHub](https://github.com/Honno/space-hermit){: class='gh'}
+    : [Source](https://github.com/Honno/space-hermit){: class='gh'}
     
-    POV animation of the inside of a cockpit in space. Particular attention was made to make it *feel* realistic, much to the disinterest of anyone.
+    POV animation of the inside of a cockpit in space. I wanted it to *feel* realistic, mainly by designing my own bobbing and shake-cam logic.
     
     * Java
     {: class='langs'}
@@ -78,9 +101,9 @@ I'm working on my first video game right now. Slow going as I'm figuring out how
     {: class='tools'}
     
   * **MTR traversal**
-    : [GitHub](https://github.com/Honno/mtr-traversal){: class='gh'}
+    : [Source](https://github.com/Honno/mtr-traversal){: class='gh'}
 
-    Various utilities for a user to find out information pertaining to use of the Hong Kong train network.
+    Various utilities for a user to find out information pertaining to use of the Hong Kong train network. Includes creation of a graph data structure, and implementation of path finding using breadth-first search (in hindsight A* would of been nice).
     
     * Java
     {: class='langs'}

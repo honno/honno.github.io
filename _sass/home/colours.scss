@@ -85,7 +85,8 @@ $bold-size: 0.25px;
     }
 
     a {
-        &.www { color: $violet }
+        &.www, &.blog { color: $violet }
+        &.file { color: $red }
         &.email { color: $yellow }
         &.gh { color: $green } // github
         &.twt { color: $cyan } // twitter
