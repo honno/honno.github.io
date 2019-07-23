@@ -18,7 +18,7 @@ I've got final year to get on with! Right now my focus is the overly-ambitious f
     
     Also required designing a multiprocessing Python script that can find a self-referential CRC32 value.
     
-    I explain the whole process in a blog article, which comes with numerous ASCII charts.
+    I explain the whole process in an extensive blog article, which comes with numerous ASCII charts.
   
     * Python
     {: class='langs'}
