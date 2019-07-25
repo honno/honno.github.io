@@ -14,7 +14,7 @@ I've got final year to get on with! Right now my focus is the overly-ambitious t
     : [Source  (CRC)](https://github.com/Honno/metapp){: class='gh'}
     : [Article](https://blog.matthewbarber.io/2019/07/22/how-to-make-compressed-file-quines.html){: class='blog'}
     
-    A GZIP file that decompresses to itself, ad infinitum. Involved the creation of an abstract Lempel-Ziv program that self-expands, which was carefully translated into a DEFLATE compressed data stream using the built-in fixed Huffman alphabet.
+    A GZIP file that decompresses an exact copy of itself, ad infinitum. Involved the creation of an abstract Lempel-Ziv program that self-expands, which was carefully translated into a DEFLATE compressed data stream using the built-in fixed Huffman alphabet.
     
     Also required designing a multiprocessing Python script that can find a self-referential CRC32 value.
     
