@@ -73,14 +73,14 @@ I've got final year to get on with! Right now my focus is the overly-ambitious t
   * **Twitter Anew**
     : [Source](https://github.com/Honno/twitter-anew){: class='gh'}
     
-    Tool to make your twitter experience less daunting if you follow a ton of folks, by way of using and abusing the Twitter API to designate those followed into a list.
+    Tool to make your twitter experience less daunting if you follow a ton of folks, by way of using the Twitter API to designate those followed into the platform's Lists system.
 
     * Python
     {: class='langs'}
 
 * ### 2017
   * **Expert system** 
-    : [Source](https://github.com/Honno/intro-to-ai-labs/blob/master/8/expert.lisp){: class='gh'}
+    : [Source](https://gist.github.com/Honno/b733f151b71116631660ac4c85947289){: class='gh'}
     
     Implementation of a forward/backward reasoning, ala an inference engine for an expert system.
     
