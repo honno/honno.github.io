@@ -4,7 +4,7 @@ About me? The above covers the basics, otherwise my bio is the typical "I like t
 
 ## What I've been up to
 
-I've got final year to get on with! Right now my focus is the overly-ambitious thesis project I stupidly had to propose: a penetration test suite for RNG systems. I'm also searching for a job after graduation! <sub>Wanna hook me up? ;\)</sub>
+I've got final year to get on with! Right now my focus is the overly-ambitious thesis project I stupidly had to propose: a penetration test suite for RNG systems. I'm also searching for a job after graduation! <sub>[Wanna hook me up?](/assets/home/matthew-barber-cv.pdf)</sub>
 
 ## My projects
 
