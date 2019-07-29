@@ -224,11 +224,8 @@ ul#projects-list {
 
 #blog > p {
     text-align: right;
-
-    & > a {
-        font-weight: bold;
-        text-decoration-style: double;
-    }
+    
+    & > a { text-decoration-style: double }
 }
 
 footer {
