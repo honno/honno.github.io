@@ -1,4 +1,7 @@
 /* Variables */
+
+@bold-size: 0.25px;
+
 // Colours
 @black: #1c1c1c;
 @darker-grey: #4e4e4e;
@@ -111,7 +114,7 @@ main {
             &.plate { color: @yellow; }
             &.exclaim {
                 color: @darker-grey;
-                font-weight: bold;
+                text-shadow: -@bold-size 0  @darker-grey, @bold-size 0 @darker-grey;
             }
         }
     }
