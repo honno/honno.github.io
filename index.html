@@ -19,7 +19,7 @@ title: "/home/matthew/"
         <link rel="stylesheet" href="/assets/home/style.css">
 
         <meta property='og:title' content="{{ page.title }}" />
-        <meta property='og:image' content="/assets/home/preview.png" />
+        <meta property='og:image' content="{{ "/assets/home/preview.png" | prepend: site.url }}" />
         <meta property='og:description' content="{{ site.description }}" />
         <meta property='og:url' content="{{ site.url }}" />
 
