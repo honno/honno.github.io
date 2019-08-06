@@ -1,11 +1,12 @@
 ---
+title: "/home/matthew/"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>/home/matthew/</title>
+        <title>{{ page.title }}</title>
         <meta name="description" content="{{ site.description }}" />
         <link rel="shortcut icon" href="assets/home/light.ico"  type="image/x-icon" />
 
@@ -16,6 +17,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link rel="stylesheet" href="/assets/normalize.css">
         <link rel="stylesheet" href="/assets/home/style.css">
+
+        <meta property='og:title' content="{{ page.title }}" />
+        <meta property='og:image' content="/assets/home/preview.png" />
+        <meta property='og:description' content="{{ site.description }}" />
+        <meta property='og:url' content="{{ site.url }}" />
+
     </head>
     <body>
         <div id="wrapper">
