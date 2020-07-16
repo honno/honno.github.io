@@ -28,7 +28,7 @@ regard.
     : [Script](https://github.com/Honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
     : [Report](https://github.com/Honno/epitope-classification/blob/master/report.pdf){: class='www'}
 
-    Exploration of the rather-tricky linear b-cell epitopes classification problem, and
+    Exploration of the (rather tricky) linear b-cell epitopes classification problem, and
     subsequent modelling.
     
     * Python
