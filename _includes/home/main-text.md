@@ -7,9 +7,9 @@ regard.
 ## My projects
 
 * ### 2020
-  * **rngtest**
-    : [Source](https://github.com/Honno/rngtest){: class='gh'}
-    : [Docs](https://rngtest.readthedocs.io/en/latest/){: class='www'}
+  * **coinflip**
+    : [Source](https://github.com/Honno/coinflip){: class='gh'}
+    : [Docs](https://coinflip.readthedocs.io/en/latest/){: class='www'}
 
     In-development testing suite for random number generators, implementing the
     tests recommended by [NIST SP800-22](https://github.com/Honno/rngtest/blob/master/SP800-22.pdf). 
