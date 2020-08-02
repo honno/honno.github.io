@@ -8,6 +8,7 @@ regard.
 
 * ### 2020
   * **coinflip**
+    : [Video](https://www.youtube.com/watch?v=0xrWG3Ki9Z8){: class='file'}
     : [Source](https://github.com/Honno/coinflip){: class='gh'}
     : [Docs](https://coinflip.readthedocs.io/en/latest/){: class='www'}
 
