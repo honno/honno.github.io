@@ -8,8 +8,9 @@ regard.
 
 * ### 2020
   * **coinflip**
-    : [Video](https://www.youtube.com/watch?v=0xrWG3Ki9Z8){: class='file'}
+    : [Demo](https://www.youtube.com/watch?v=0xrWG3Ki9Z8){: class='file'}
     : [Source](https://github.com/Honno/coinflip){: class='gh'}
+    : [Report](https://raw.githubusercontent.com/Honno/coinflip/report/report.pdf){: class='www'}
     : [Docs](https://coinflip.readthedocs.io/en/latest/){: class='www'}
 
     In-development testing suite for random number generators, implementing the
@@ -26,8 +27,8 @@ regard.
     {: class='tools'}
     
   * **Epitope classification modelling**
-    : [Script](https://github.com/Honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
-    : [Report](https://github.com/Honno/epitope-classification/blob/master/report.pdf){: class='www'}
+    : [Report](https://raw.githubusercontent.com/Honno/epitope-classification/master/report.pdf){: class='www'}
+    : [Script (Analysis)](https://github.com/Honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
 
     Exploration of the (rather tricky) linear b-cell epitopes classification problem, and
     subsequent modelling.
