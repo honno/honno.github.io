@@ -13,9 +13,8 @@ var descriptions = [ // 30 char max
     "Took too long making this",
     "Uses light IDE themes",
     "Reads flavour notes of 99p beer",
-    "Plays bad GM games from 00s",
     "Still owns a One Plus One",
-    "Spent too much on this domain",
+    "Spends £30 yearly on domain",
     "Regrets site project structure",
     "Rarely has such good hair"
 ];
