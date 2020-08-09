@@ -43,7 +43,8 @@ regard.
     : [Source](https://github.com/Joshgallagher/financial-analysis-stack){: class='gh'}
     
     A project that demonstrates how various distributed data and parallel
-    processing services could be used for financial analysis.
+    processing services could be used for financial analysis. Made in
+    collaboration with my friend [Josh](https://www.joshuagallagher.io/).
 
     An example application is provided, which uses the daily close prices of a
     stock to generate a linear regression model. This model is then used to
