@@ -4,6 +4,8 @@ About me? The above covers the basics, otherwise my bio is the typical "I like
 to create cool things" spiel --- I'll let you decide if I succeed in that
 regard.
 
+I'm looking for a graduate role, UK or abroad  (my résumé is available [here](/assets/home/matthew-barber-cv-online.pdf) :)
+
 ## My projects
 
 * ### 2020
