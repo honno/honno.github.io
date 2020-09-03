@@ -28,6 +28,21 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     * Hypothesis
     {: class='tools'}
     
+  * **sts-pylib**
+    : [Source](https://github.com/Honno/sts-pylib){: class='gh'}
+    : [Docs](https://sts-pylib.readthedocs.io/en/latest/){: class='www'}
+    
+    Modifies the [NIST Statistical Test Suite](https://csrc.nist.gov/Projects/Random-Bit-Generation/Documentation-and-Software)
+    so that its randomness tests can be accessed individually,
+    and subsequently provides a Python interface to use them.
+    
+    * Python
+    * C
+    {: class='langs'}
+    
+    * CFFI
+    {: class='tools'}
+  
   * **Epitope classification modelling**
     : [Paper](https://raw.githubusercontent.com/Honno/epitope-classification/master/report.pdf){: class='www'}
     : [Script (Preprocess)](https://github.com/Honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
