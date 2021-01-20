@@ -8,6 +8,29 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
 
 ## My projects
 
+* ### 2021
+  * **YoYo Games Sandbox Archive**
+    : [Site](https://www.yygarchive.org/){: class='www'}
+    : [Source](https://github.com/Honno/yyg-sandbox-search){: class='gh'}
+    
+    A searchable archive of the YoYo Games Sandbox,
+    a games portal which has since shutdown.
+    I extracted the games and metadata from a site save (a WARC)
+    and hosted it on the Internet Archive,
+    which this site interfaces with.
+
+    * Python
+    {: class='langs'}
+    
+    * pywb
+    * BeautifulSoup
+    * requests
+    * MongoDB
+    * Flask
+    * Sqlite
+    {: class='tools'}
+
+
 * ### 2020
   * **coinflip**
     : [Demo](https://www.youtube.com/watch?v=0xrWG3Ki9Z8){: class='file'}
@@ -111,7 +134,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     * Python
     {: class='langs'}
 
-  * **metapp** *(On hold)*
+  * **metapp** *(Cancelled)*
     : [Source](https://github.com/Honno/metapp){: class='gh'}
 
     Meta puzzle platformer about the nature of player/developer relationships.
@@ -120,8 +143,6 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     auto-dialogue system with dynamic speech bubbles to improve the flow of
     narrative.
 
-    Don't have enough time to see it to fruition at the moment :\(
-
     * GDScript
     * C#
     {: class='langs'}
@@ -129,7 +150,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     * Godot
     {: class='tools'}
 
-  * **matthewbarber.io** & **The Blorg**
+  * **matthewbarber.io**
     : [Source (Portfolio)](https://github.com/Honno/Honno.github.io){: class='gh'}
     : [Source (Blog)](https://github.com/Honno/blog){: class='gh'}
 
