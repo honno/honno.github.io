@@ -2,22 +2,38 @@ Hello there, thanks for visiting my site!
 
 About me? The above covers the basics, otherwise my bio is the typical "I like
 to create cool things" spiel --- I'll let you decide if I succeed in that
-regard.
-
-I'm looking for a graduate role, UK or abroad  (my résumé is available [here](https://raw.githubusercontent.com/Honno/curriculum-vitae/main/matthew-barber-cv.pdf) :)
+regard :)
 
 ## My projects
 
 * ### 2021
+  * **asciiforever.net**
+    : [Site](https://www.asciiforever.net/){: class='www'}
+    : [Source](https://github.com/honno/ascii-forever){: class='gh'}
+    
+    Experimental social platform for text artists to share their work and interact with other users.
+    
+    * Python
+    * HTML
+    * Sass
+    * JavaScript
+    {: class='langs'}
+    
+    * Django
+    * Rich
+    * pytest
+    {: class='tools'}
+
   * **YoYo Games Sandbox Archive**
     : [Site](https://www.yygarchive.org/){: class='www'}
-    : [Source](https://github.com/Honno/yyg-sandbox-search){: class='gh'}
+    : [Source](https://github.com/honno/yyg-sandbox-search){: class='gh'}
     
     A searchable archive of the YoYo Games Sandbox,
     a games portal which has since shutdown.
-    I extracted the games and metadata from a site save (a WARC)
-    and hosted it on the Internet Archive,
-    which this site interfaces with.
+    I extracted the games and metadata from a site save (a WARC),
+    preprocessed it,
+    and hosted the procured games on the Internet Archive 
+    (which this site interfaces with).
 
     * Python
     {: class='langs'}
@@ -34,25 +50,29 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
 * ### 2020
   * **coinflip**
     : [Demo](https://www.youtube.com/watch?v=0xrWG3Ki9Z8){: class='file'}
-    : [Source](https://github.com/Honno/coinflip){: class='gh'}
-    : [Paper](https://raw.githubusercontent.com/Honno/coinflip/report/report.pdf){: class='www'}
+    : [Source](https://github.com/honno/coinflip){: class='gh'}
+    : [Paper](https://raw.githubusercontent.com/honno/coinflip/report/report.pdf){: class='www'}
     : [Docs](https://coinflip.readthedocs.io/en/latest/){: class='www'}
 
     In-development testing suite for random number generators, implementing the
-    tests recommended by [NIST SP800-22](https://github.com/Honno/rngtest/blob/master/SP800-22.pdf). 
+    tests recommended by [NIST SP800-22](https://github.com/honno/rngtest/blob/master/SP800-22.pdf). 
     A user-friendly command-line interface provided allows users to load, run
     and report on their data in a step-by-step fashion.
     
     * Python
     {: class='langs'}
     
-    * Pandas
+    * pandas
+    * SciPy
     * Click
+    * Rich
+    * Altair
+    * pytest
     * Hypothesis
     {: class='tools'}
     
   * **sts-pylib**
-    : [Source](https://github.com/Honno/sts-pylib){: class='gh'}
+    : [Source](https://github.com/honno/sts-pylib){: class='gh'}
     : [Docs](https://sts-pylib.readthedocs.io/en/latest/){: class='www'}
     
     Modifies the [NIST Statistical Test Suite](https://csrc.nist.gov/Projects/Random-Bit-Generation/Documentation-and-Software)
@@ -60,15 +80,14 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     and subsequently provides a Python interface to use them.
     
     * Python
-    * C
     {: class='langs'}
     
     * CFFI
     {: class='tools'}
   
   * **Epitope classification modelling**
-    : [Paper](https://raw.githubusercontent.com/Honno/epitope-classification/master/report.pdf){: class='www'}
-    : [Script (Preprocess)](https://github.com/Honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
+    : [Paper](https://raw.githubusercontent.com/honno/epitope-classification/master/report.pdf){: class='www'}
+    : [Script (Preprocess)](https://github.com/honno/epitope-classification/blob/master/preprocess/preprocess_data.py){: class='gh'}
 
     Exploration of the (rather tricky) linear b-cell epitopes classification problem, and
     subsequent modelling.
@@ -102,7 +121,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='tools'}
 
   * **Android travel journalling app**
-    : [Source](https://github.com/Honno/travel-app){: class='gh'}
+    : [Source](https://github.com/honno/travel-app){: class='gh'}
     
     An app that helps you journal your travels.
     
@@ -112,12 +131,10 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     * Android SDK
     {: class='tools'}
 
-
-
 * ### 2019
   * **quine.gz**
     : [quine.gz](https://blog.matthewbarber.io/downloads/quine.gz){: class='file'}
-    : [Source (CRC)](https://gist.github.com/Honno/4e6e4790e14c43bf5d6fa822fb56b6ea){: class='gh'}
+    : [Source (CRC)](https://gist.github.com/honno/4e6e4790e14c43bf5d6fa822fb56b6ea){: class='gh'}
     : [Article](https://blog.matthewbarber.io/2019/07/22/how-to-make-compressed-file-quines.html){: class='blog'}
 
     A GZIP file that decompresses an exact copy of itself, ad infinitum. Involved
@@ -135,7 +152,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='langs'}
 
   * **metapp** *(Cancelled)*
-    : [Source](https://github.com/Honno/metapp){: class='gh'}
+    : [Source](https://github.com/honno/metapp){: class='gh'}
 
     Meta puzzle platformer about the nature of player/developer relationships.
     Level design inspired by [Karoshi](https://www.karoshigame.com/) and
@@ -151,8 +168,8 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='tools'}
 
   * **matthewbarber.io**
-    : [Source (Portfolio)](https://github.com/Honno/Honno.github.io){: class='gh'}
-    : [Source (Blog)](https://github.com/Honno/blog){: class='gh'}
+    : [Source (Portfolio)](https://github.com/honno/honno.github.io){: class='gh'}
+    : [Source (Blog)](https://github.com/honno/blog){: class='gh'}
 
     My strange website. Now even responsive on some modern devices! The development
     environment look design comes from a desire to present myself as a hip hacker
@@ -172,7 +189,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
 
 * ### 2018
   * **University events website**
-    : [Source](https://github.com/Honno/events-site){: class='gh'}
+    : [Source](https://github.com/honno/events-site){: class='gh'}
 
     Platform for university students to manage their own or their societies'
     events, and allow for students to interact with the event pages.
@@ -188,7 +205,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='tools'}
 
   * **Twitter Anew**
-    : [Source](https://github.com/Honno/twitter-anew){: class='gh'}
+    : [Source](https://github.com/honno/twitter-anew){: class='gh'}
 
     Tool to make your twitter experience less daunting if you follow a ton of
     folks, by way of using the Twitter API to designate those followed into the
@@ -199,7 +216,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
 
 * ### 2017
   * **Expert system** 
-    : [Source](https://gist.github.com/Honno/b733f151b71116631660ac4c85947289){: class='gh'}
+    : [Source](https://gist.github.com/honno/b733f151b71116631660ac4c85947289){: class='gh'}
 
     Implementation of a forward/backward reasoning, ala an inference engine for an
     expert system.
@@ -208,7 +225,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='langs'}
 
   * **Space Hermit**
-    : [Source](https://github.com/Honno/space-hermit){: class='gh'}
+    : [Source](https://github.com/honno/space-hermit){: class='gh'}
 
     POV animation of the inside of a cockpit in space. I wanted it to *feel*
     realistic, mainly by designing my own bobbing and shake-cam logic.
@@ -220,7 +237,7 @@ I'm looking for a graduate role, UK or abroad  (my résumé is available [here](
     {: class='tools'}
 
   * **MTR traversal**
-    : [Source](https://github.com/Honno/mtr-traversal){: class='gh'}
+    : [Source](https://github.com/honno/mtr-traversal){: class='gh'}
 
     Various utilities for a user to find out information pertaining to use of the
     Hong Kong train network. Includes creation of a graph data structure, and
